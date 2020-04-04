@@ -1,0 +1,107 @@
+//noinspection LessResolvedByNameOnly
+.team {
+    &-inner {
+        .row-flex();
+        justify-content: center;
+    }
+
+    &-item {
+        margin: 0 auto;
+
+        .xxs-block( {
+                max-width: 270px;
+            }
+
+        );
+
+        &-inner {
+            .col();
+            .size(3);
+            .size-sm(3);
+            .size-xs(6);
+            .size-xxs(12);
+
+            .xxs-block( {
+                    padding: 20px;
+                }
+
+            );
+        }
+
+        &-img {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        &-name {
+            font-family: @font-RalewayRegular;
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 1.2;
+            color: #000;
+            margin-bottom: 8px;
+        }
+
+        &-prof {
+            margin-bottom: 20px;
+            color: #be3939;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+
+        &-text {
+            font-family: @font-RalewayRegular;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.social-icons {
+    display: flex;
+    margin-bottom: 20px;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 40px;
+        height: 40px;
+        border: 1px solid @c_main;
+        border-radius: 3px;
+        //position: relative; или флексом
+        margin: 4px;
+        cursor: pointer;
+        transition: color, background-color .1s linear;
+
+        &:hover {
+            background-color: @c_main;
+            border: none;
+
+            .social-icon {
+                fill: #fff;
+            }
+        }
+
+        .social-icon {
+            height: 18px;
+            fill: @c_main;
+
+
+            transition: fill .1s linear;
+        }
+
+        /* img{
+
+             height: 18px;
+            !* position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate3d(-50%,-50%,0);*!
+
+         }*/
+    }
+}

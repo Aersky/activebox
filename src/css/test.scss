@@ -1,0 +1,7 @@
+@mixin test($tets) {
+    color: $tets;
+};
+
+.active{
+    @include test(red);
+}

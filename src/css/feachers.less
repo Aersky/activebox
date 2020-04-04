@@ -1,0 +1,47 @@
+//noinspection LessResolvedByNameOnly
+.features {
+  margin: 100px 0;
+
+  .sm-block({margin: 70px 0;});
+
+  &-inner {
+    .row-flex();
+    justify-content: center;
+  }
+
+  &-item {
+    .col();
+    .size(4);
+    .size-md(6);
+    .size-xs(12);
+    text-align: center;
+
+    padding: 0 20px;
+
+    .icon {
+      margin-bottom: 35px;
+
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    .title {
+      text-transform: uppercase;
+      font-family: @font-RalewayBold;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 25px;
+
+      color: @c_black;
+      margin-bottom: 20px;
+    }
+    .content {
+      font-family: @font-RalewayRegular;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      margin-bottom: 50px;
+    }
+  }
+}

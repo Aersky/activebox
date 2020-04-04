@@ -1,0 +1,71 @@
+//noinspection LessResolvedByNameOnly
+.burger {
+	width: 80px;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	transition: transform 400ms;
+	user-select: none;
+	display: none;
+
+	.sm-block({
+		display: block;
+		z-index: 4;
+		width: 70px;
+		
+	});
+
+	.xs-block({
+		width: 60px;
+	});
+
+	.top {
+		stroke-dasharray: 40 121;
+	}
+
+	.bottom {
+		stroke-dasharray: 40 121;
+	}
+
+	&.active {
+		.top {
+			stroke-dashoffset: -68px;
+		}
+
+		.bottom {
+			stroke-dashoffset: -68px;
+		}
+	}
+}
+
+.burgerRotate.active {
+	transform: rotate(45deg);
+}
+
+.line {
+	fill: none;
+	transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+	stroke: #fff;
+	stroke-width: 5.5;
+	stroke-linecap: round;
+}
+
+.promo {
+}
+.wrapper {
+}
+.promo-inner {
+}
+.promo-title {
+}
+.promo-suptitle {
+}
+.promo-btn {
+}
+.btn {
+}
+.btn--color {
+}
+.promo--btn {
+}
+
+

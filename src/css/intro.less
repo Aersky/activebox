@@ -1,0 +1,97 @@
+//noinspection LessResolvedByNameOnly
+.intro {
+    background: #2c314f url("../img/intro-bg.jpg") center no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    .sm-block( {
+            height: auto;
+
+        }
+
+    );
+
+    &-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh; //растягиваем, чтобы была центровка
+        padding-top: 50px;
+
+        .sm-block( {
+                height: auto;
+
+            }
+
+        );
+    }
+
+    &-content {
+        display: flex; // нужен для центровки
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    &-va-container {
+        text-align: center;
+        color: @c_white;
+        max-width: 900px;
+        margin: 0 auto;
+
+        .md-block( {
+                max-width: 700px;
+            }
+
+        );
+
+        .sm-block( {
+                padding: 100px 0;
+            }
+
+        );
+    }
+
+
+    &-title {
+        font-family: @font-OpenSansBold;
+        font-size: 65px;
+        font-weight: 700;
+        line-height: 1.1;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+
+        .to(960px, {
+                font-size: 50px;
+            }
+
+        );
+
+        .md-block( {
+                font-size: 40px;
+            }
+
+        );
+
+        .sm-block( {
+                font-size: 30px;
+            }
+
+        );
+    }
+
+    &-suptitle {
+        font-family: @font-RalewayRegular;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 40px;
+
+        .sm-block( {
+                font-size: 16px;
+            }
+
+        )
+    }
+
+}

@@ -1,0 +1,108 @@
+//noinspection LessResolvedByNameOnly
+.reviews {
+
+    &-slide {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 2500px;
+        background-color: #43416c;
+
+        &-photo {
+            .u-size(6, 12, 0px);
+            .sm-block({
+                .u-size(12, 12, 0px);
+            });
+
+            img {
+                margin-left: auto;
+                max-width: 100%;
+            }
+        }
+
+        &-text {
+            position: relative;
+            max-width: 950px;
+
+            .u-size(6, 12, 0px);
+            .sm-block({
+                .u-size(12, 12, 0px);
+            });
+
+            &-inner {
+                .from(769px, {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin-right: auto;
+                    width: 70%;
+                    transform: translate3d(-50%, -50%, 0);
+                });
+
+                .sm-block({
+                    display: block;
+                    padding: 50px 20px;
+                });
+            }
+        }
+
+        &-title {
+            margin-bottom: 20px;
+            color: @c_white;
+            font-weight: 500;
+            font-style: italic;
+            font-size: 29px;
+            font-family: @font-RalewayRegular;
+            line-height: 1.2;
+
+            .md-block({
+                font-size: 25px;
+                margin-bottom: 10px;
+            });
+
+            .xs-block({
+                font-size: 19px;
+            });
+        }
+
+        &-suptitle {
+            color: @c_white;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 13px;
+            font-family: @font-RalewayBold;
+            line-height: 1.2;
+        }
+    }
+}
+
+.slick-dots {
+    bottom: 0;
+    right: 0;
+    width: 50%;
+
+    li.slick-active {
+        button {
+            &:before {
+                color: transparent;
+            }
+        }
+    }
+
+    li button {
+        &:before {
+            height: 3px;
+            width: 20px;
+            background-color: #fff;
+            color: transparent;
+        }
+    }
+
+    .sm-block({
+        bottom: 10px;
+        right: auto;
+        width: 100%;
+    });
+
+}

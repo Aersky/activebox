@@ -1,0 +1,119 @@
+@import "smart-grid";
+@import "normalize";
+@import "slick";
+@import "slick-theme";
+@import "header";
+@import "intro";
+@import "feachers";
+@import "work";
+@import "team";
+@import "reviews";
+@import "promo";
+@import "footer";
+@import "burger";
+@import "myburger";
+
+
+.reset();
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: RalewayRegular;
+    src: url('../fonts/RalewayRegular.eot') format('embedded-opentype');
+    src: url('../fonts/RalewayRegular.ttf') format('truetype');
+    src: url('../fonts/RalewayRegular.woff') format('woff2');
+}
+
+@font-face {
+    font-family: RalewaySemiBold;
+    src: url('../fonts/RalewaySemiBold.eot') format('embedded-opentype');
+    src: url('../fonts/RalewaySemiBold.ttf') format('truetype');
+    src: url('../fonts/RalewaySemiBold.woff') format('woff2');
+}
+
+@font-face {
+    font-family: OpenSansBold;
+    src: url('../fonts/OpenSansBold.eot') format('embedded-opentype');
+    src: url('../fonts/OpenSansBold.ttf') format('truetype');
+    src: url('../fonts/OpenSansBold.woff') format('woff2');
+}
+
+@font-face {
+    font-family: RalewayBold;
+    src: url('../fonts/RalewayBold.eot') format('embedded-opentype');
+    src: url('../fonts/RalewayBold.ttf') format('truetype');
+    src: url('../fonts/RalewayBold.woff') format('woff2');
+}
+
+@font-face {
+    font-family: RalewayLight;
+    src: url('../fonts/RalewayLight.eot') format('embedded-opentype');
+    src: url('../fonts/RalewayLight.ttf') format('truetype');
+    src: url('../fonts/RalewayLight.woff') format('woff2');
+}
+
+@font-RalewayBold: 'RalewayBold', sans-serif;
+@font-OpenSansBold: 'OpenSansBold', sans-serif;
+@font-RalewaySemiBold: 'RalewaySemiBold', sans-serif;
+@font-RalewayRegular: 'RalewayRegular', sans-serif;
+@font-RalewayLight: 'RalewayLight', sans-serif;
+
+@c_lighter: #afafaf;
+@c_white: #fff;
+@c_red: #e84545;
+@c_black: #000000;
+@c_main: #6c7279;
+
+.degubGrid {
+    .debug(rgba(0, 0, 0, 0.10), 1px solid #929200);
+    //z-index: 1000;
+}
+
+.wrapper {
+   .wrapper();
+}
+
+body {
+    font-family: @font-RalewayRegular;
+    font-size: 14px;
+    font-weight: 500;
+    color: @c_main;
+
+    -webkit-font-smoothing: antialiased; // сглаживаем шрифты
+
+    .lock {
+        overflow: hidden;
+    }
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 15px 40px;
+      border: none;
+
+    border-radius: 3px;
+
+    color: @c_white;
+    font-family: @font-RalewayRegular;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+
+    transition: background-color .2s linear;
+
+    &:hover {
+        background-color: #e63d3d;
+    }
+}
+
+.btn--color {
+    background-color: #e84545;
+}
